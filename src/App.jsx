@@ -3,7 +3,7 @@ import { ShopContextProvider } from "./context/ShopContxtProvider";
 import { Nav } from "./Components/Navbar";
 import Cart from "./Pages/cart/Cart";
 import Contact from "./Pages/contact/Contact";
-import DefaultProfile from "./Pages/default/DefaultProfile";
+import DefaultPage from "./Pages/default/DefaultPage";
 import Shop from "./Pages/shop/shop";
 import styles from "./App.module.css";
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
         ) : name === "shop" ? (
           <Shop />
         ) : (
-          <DefaultProfile />
+          <DefaultPage />
         )}
       </ShopContextProvider>
     </div>

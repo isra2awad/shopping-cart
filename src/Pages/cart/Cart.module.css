@@ -1,4 +1,4 @@
-.itemsContainer {
+.cart {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,4 +29,21 @@ input {
   width: 40px;
   text-align: center;
   font-weight: bolder;
+}
+
+.btn {
+  background-color: rgba(19, 44, 2, 0.9);
+  color: beige;
+  border: none;
+  min-width: 100px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(19, 44, 2);
+  color: beige;
+  cursor: pointer;
 }

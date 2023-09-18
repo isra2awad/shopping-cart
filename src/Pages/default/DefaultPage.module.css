@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./src/assets/pexels-photo-3965545.jpeg"); /* Replace 'your-photo.jpg' with the path to your image */
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed;
+}
+
+.container > h1 {
+  color: rgba(19, 44, 2, 0.9);
+  font-size: 50px;
+}
+
+.shopButton {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(19, 44, 2, 0.9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.shopButton:hover {
+  background-color: rgb(19, 44, 2);
+}

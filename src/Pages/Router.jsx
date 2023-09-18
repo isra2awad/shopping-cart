@@ -10,6 +10,7 @@ const Router = () => {
       element: <App />,
       errorElement: <ErrorPage />,
     },
+
     {
       path: "/:name",
       element: <App />,

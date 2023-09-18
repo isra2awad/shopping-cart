@@ -1,12 +1,23 @@
 import styles from "./Cart.module.css";
 import { ShopContext } from "../../context/ShopContxtProvider";
 import { useContext } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const { products, cartItems, addToCart, removeFromCart, updateCartItemsqty } =
-    useContext(ShopContext);
+  const {
+    products,
+    cartItems,
+    addToCart,
+    removeFromCart,
+    updateCartItemsqty,
+    getTotalCartPrice,
+  } = useContext(ShopContext);
+
+  let totalPrice = getTotalCartPrice();
+  const navigate = useNavigate();
+
   return (
-    <div className={styles.itemsContainer}>
+    <div className={styles.cart}>
       {products.map((product) => {
         if (cartItems[product.id] !== 0) {
           return (
@@ -27,7 +38,7 @@ const Cart = () => {
                   <input
                     value={cartItems[product.id]}
                     onChange={(e) => {
-                      updateCartItemsqty(product.id, e.target.value);
+                      updateCartItemsqty(product.id, Number(e.target.value));
                     }}
                   ></input>
                   <button
@@ -43,6 +54,23 @@ const Cart = () => {
           );
         }
       })}
+
+      {totalPrice > 0 ? (
+        <div className={styles.checkOut}>
+          <p>subtotal: {totalPrice}$</p>
+          <button className={styles.btn}>Check out</button>
+          <button
+            className={styles.btn}
+            onClick={() => {
+              navigate("/shop");
+            }}
+          >
+            Continue Shopping
+          </button>
+        </div>
+      ) : (
+        <h1>Your Cart is empty.</h1>
+      )}
     </div>
   );
 };

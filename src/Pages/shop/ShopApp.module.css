@@ -47,19 +47,20 @@
   cursor: pointer;
 }
 
-.addToCartBttn {
-  background-color: transparent;
-  border: 2px solid rgb(19, 19, 19);
+.product > .addToCartBttn {
+  background-color: rgba(19, 44, 2, 0.9);
+  color: beige;
+  border: none;
   min-width: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
 
-.addToCartBttn:hover {
-  background-color: rgb(19, 19, 19);
-  color: white;
+.product > .addToCartBttn:hover {
+  background-color: rgb(19, 44, 2);
+  color: beige;
   cursor: pointer;
 }

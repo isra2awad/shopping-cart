@@ -11,9 +11,7 @@ const Shop = () => {
 
   return (
     <div className={styles.shop}>
-      <div className={styles.shopTitle}>
-        <h1>Here are Our products</h1>
-      </div>
+      <div className={styles.shopTitle}></div>
       <div className={styles["shop-container"]}>
         {products.map((product) => (
           <div key={product.id} className={styles.product}>
@@ -30,18 +28,6 @@ const Shop = () => {
               Add to Cart
               {cartItems[product.id] > 0 ? <> ({cartItems[product.id]})</> : ""}
             </button>
-            {cartItems[product.id] > 0 ? (
-              <button
-                className={styles.addToCartBttn}
-                onClick={() => {
-                  removeFromCart(product.id);
-                }}
-              >
-                Remove
-              </button>
-            ) : (
-              ""
-            )}
           </div>
         ))}
       </div>

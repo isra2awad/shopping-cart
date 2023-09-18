@@ -1,0 +1,56 @@
+/* ContactForm.css */
+
+.formContainer {
+  margin-top: 150px;
+}
+
+/* Form container styles */
+.formInput {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Form header styles */
+.formInput > h2,
+.formContainer > h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form input styles */
+.formInput > label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.formInput > input[type="text"],
+.formInput > input[type="email"],
+.formInput > textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.formInput > textarea {
+  resize: vertical;
+}
+
+.submitButton {
+  background-color: rgb(19, 44, 2);
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}

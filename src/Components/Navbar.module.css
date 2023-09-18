@@ -1,10 +1,11 @@
 .navbar {
-  background-color: rgb(10, 10, 10);
+  background-color: rgba(19, 44, 2, 0.651);
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-size: inherit;
 }
 
 .links {
@@ -15,7 +16,7 @@
 
 .links a {
   text-decoration: none;
-  color: white;
+  color: beige;
   margin-left: 20px;
   font-size: 25px;
 }
