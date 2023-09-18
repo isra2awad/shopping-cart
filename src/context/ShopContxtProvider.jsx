@@ -63,7 +63,8 @@ export const ShopContextProvider = (props) => {
         totalPrice += cartItems[item] * itemDetails.price;
       }
     }
-    return totalPrice;
+    const subtotal = totalPrice.toFixed(1);
+    return subtotal;
   }
 
   function handleChange(e) {
