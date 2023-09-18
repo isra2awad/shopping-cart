@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("./src/assets/pexels-photo-3965545.jpeg"); /* Replace 'your-photo.jpg' with the path to your image */
+  background-image: url("https://serving.photos.photobox.com/526570518c92aeeedf71e1b4aef8a129bced61cc62e8c9c3f2674dc92451fef675243189.jpg"); /* Replace 'your-photo.jpg' with the path to your image */
   background-size: cover; /* Cover the entire viewport */
   background-repeat: no-repeat; /* Prevent image repetition */
   background-attachment: fixed;
