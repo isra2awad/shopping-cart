@@ -1,15 +1,19 @@
+/* CSS for responsive design */
+
+/* Navbar styles */
 .navbar {
   background-color: rgba(19, 44, 2, 0.651);
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* Adjust alignment for responsiveness */
   align-items: center;
   font-size: inherit;
+  padding: 0 20px; /* Add padding for spacing on smaller screens */
 }
 
+/* Links container styles */
 .links {
-  margin-right: 50px;
   display: flex;
   align-items: center;
 }
@@ -18,9 +22,28 @@
   text-decoration: none;
   color: beige;
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 1.5rem; /* Adjust font size for responsiveness */
 }
 
 .counter {
-  font-size: 16px;
+  font-size: 1rem; /* Adjust font size for responsiveness */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 576px) {
+  /* Navbar styles for smaller screens */
+  .navbar {
+    height: auto; /* Adjust height for content expansion on smaller screens */
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: flex-start; /* Adjust alignment for smaller screens */
+  }
+
+  /* Links container styles for smaller screens */
+  .links {
+    margin-top: 20px; /* Adjust top margin for spacing on smaller screens */
+  }
+
+  .links a {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
 }

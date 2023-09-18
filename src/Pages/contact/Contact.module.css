@@ -54,3 +54,39 @@
 .submitButton:hover {
   background-color: #0056b3;
 }
+
+@media (min-width: 577px) and (max-width: 991px) {
+  /* Form input styles for medium screens */
+  .formInput > input[type="text"],
+  .formInput > input[type="email"],
+  .formInput > textarea {
+    font-size: 1.2rem; /* Adjust font size for medium screens */
+  }
+
+  /* Submit button styles for medium screens */
+  .submitButton {
+    font-size: 1.2rem; /* Adjust font size for medium screens */
+  }
+}
+
+/* Media query for large screens (e.g., desktops) */
+@media (min-width: 992px) {
+  /* Form header styles for large screens */
+  .formInput > h2,
+  .formContainer > h2 {
+    font-size: 2.5rem; /* Adjust font size for large screens */
+    margin-bottom: 30px; /* Adjust bottom margin for large screens */
+  }
+
+  /* Form input styles for large screens */
+  .formInput > input[type="text"],
+  .formInput > input[type="email"],
+  .formInput > textarea {
+    font-size: 1.4rem; /* Adjust font size for large screens */
+  }
+
+  /* Submit button styles for large screens */
+  .submitButton {
+    font-size: 1.4rem; /* Adjust font size for large screens */
+  }
+}
