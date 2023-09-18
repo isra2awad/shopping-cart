@@ -1,16 +1,13 @@
-/* CSS for responsive design */
-
 .shopTitle {
-  margin-top: 20px; /* Adjust top margin for spacing on smaller screens */
+  margin-top: 100px;
   text-align: center;
-  font-size: 2rem; /* Adjust font size for responsiveness */
+  font-size: 40px;
 }
 
 .product {
   border-radius: 15px;
-  width: 90%; /* Adjust width for responsiveness */
-  max-width: 350px; /* Set a maximum width for larger screens */
-  min-height: 400px; /* Adjust minimum height for responsiveness */
+  width: 350px; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -19,14 +16,12 @@
   transition: transform 0.2s ease-in-out;
   overflow: hidden;
   text-align: center;
-  margin: 10px; /* Adjust margin for spacing on smaller screens */
 }
 
 .product p {
-  white-space: normal; /* Allow text to wrap on smaller screens */
+  white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 5rem; /* Limit maximum height for text */
+  text-overflow: ellipsis; /* Add ellipsis for text overflow */
 }
 
 .product .description {
@@ -35,14 +30,14 @@
 
 .product img {
   max-width: 100%;
-  height: auto; /* Maintain aspect ratio for images */
-  max-height: 300px; /* Limit maximum image height */
+  height: 300px;
 }
 
 .shop-container {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr; /* Adjust grid columns for smaller screens */
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
   gap: 20px;
 }
@@ -57,7 +52,10 @@
   color: beige;
   border: none;
   min-width: 100px;
-  padding: 10px 15px; /* Adjust padding for responsiveness */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 10px;
 }
 
@@ -66,8 +64,6 @@
   color: beige;
   cursor: pointer;
 }
-
-/* Media query for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
   .product {
     width: 90%;

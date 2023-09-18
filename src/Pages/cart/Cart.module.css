@@ -1,5 +1,3 @@
-/* CSS for responsive design */
-
 .cart {
   display: flex;
   flex-direction: column;
@@ -8,36 +6,29 @@
 }
 
 .item {
-  width: 90%; /* Adjust the width for responsiveness */
-  max-width: 700px; /* Set a maximum width for larger screens */
-  min-height: 250px; /* Set a minimum height for responsiveness */
+  width: 700px;
+  height: 250px;
   display: flex;
-  flex-direction: column; /* Adjust flex-direction for mobile devices */
   align-items: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
-  margin: 30px 0; /* Adjust vertical margin for spacing */
-  padding: 20px; /* Add padding for content spacing */
+  margin: 30px;
 }
 
 .itemImg {
   width: 150px;
-  margin: 10px 0; /* Adjust margin for spacing */
+  margin: 0 50px;
 }
 
-.item .description {
+.Item .description {
   width: 100%;
-  font-size: 1.5rem; /* Adjust font size for responsiveness */
-  text-align: center; /* Center the text for mobile devices */
-  margin-top: 10px; /* Add top margin for spacing */
+  font-size: 30px;
 }
 
 input {
   width: 40px;
-  height: 30px; /* Adjust height for better touch interaction */
   text-align: center;
-  font-weight: bold;
-  margin: 10px 0; /* Adjust margin for spacing */
+  font-weight: bolder;
 }
 
 .btn {
@@ -56,8 +47,6 @@ input {
   color: beige;
   cursor: pointer;
 }
-
-/* Media query for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
   .item {
     width: 90%;
