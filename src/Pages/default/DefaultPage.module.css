@@ -1,31 +1,46 @@
+/* Add media queries for responsiveness */
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("https://serving.photos.photobox.com/526570518c92aeeedf71e1b4aef8a129bced61cc62e8c9c3f2674dc92451fef675243189.jpg"); /* Replace 'your-photo.jpg' with the path to your image */
-  background-size: cover; /* Cover the entire viewport */
-  background-repeat: no-repeat; /* Prevent image repetition */
+  background-image: url("https://serving.photos.photobox.com/526570518c92aeeedf71e1b4aef8a129bced61cc62e8c9c3f2674dc92451fef675243189.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .container > h1 {
   color: rgba(19, 44, 2, 0.9);
-  font-size: 50px;
+  font-size: 3rem; /* Adjust font size for responsiveness */
 }
 
 .shopButton {
-  width: 150px;
-  height: 50px;
+  width: 200px; /* Adjust button width for responsiveness */
+  height: 60px; /* Adjust button height for responsiveness */
+  font-size: 1.2rem; /* Adjust font size for responsiveness */
   background-color: rgba(19, 44, 2, 0.9);
   color: white;
   border: none;
   border-radius: 8px;
-  margin: 10px;
+  margin: 20px 0; /* Add vertical margin for spacing on small screens */
   cursor: pointer;
 }
 
 .shopButton:hover {
   background-color: rgb(19, 44, 2);
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .container > h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .shopButton {
+    width: 150px; /* Adjust button width for smaller screens */
+    height: 50px; /* Adjust button height for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
 }
