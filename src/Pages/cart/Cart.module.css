@@ -1,0 +1,14 @@
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 100px;
+}
+
+.itemImg {
+  max-width: 200px;
+}
