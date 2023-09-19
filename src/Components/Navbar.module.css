@@ -6,6 +6,7 @@
   justify-content: flex-end;
   align-items: center;
   font-size: inherit;
+  gap: 0.5rem;
 }
 
 .links {
@@ -17,17 +18,19 @@
 .links a {
   text-decoration: none;
   color: beige;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   font-size: 1.5rem;
 }
 
 .counter {
-  font-size: 1rem;
-  position: relative;
-  left: 2rem;
-  top: 1rem;
+  position: absolute;
+  top: 90%; /* Adjust as needed */
+  left: 100%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  color: beige; /* Text color */
 }
 
 .ShoppingCart {
-  position: absolute;
+  position: relative;
+  display: inline-block;
 }

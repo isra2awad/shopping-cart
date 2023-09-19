@@ -16,12 +16,14 @@ export const Nav = () => {
         <Link to="/contact">Contact Us</Link>
 
         <Link to="/cart">
-          <ShoppingCart className={styles.ShoppingCart} size={32} />
-          {totalItems > 0 ? (
-            <small className={styles.counter}>{totalItems}</small>
-          ) : (
-            ""
-          )}
+          <div className={styles.ShoppingCart}>
+            <ShoppingCart size={32} />
+            {totalItems > 0 ? (
+              <small className={styles.counter}>{totalItems}</small>
+            ) : (
+              ""
+            )}
+          </div>
         </Link>
       </div>
     </nav>
