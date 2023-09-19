@@ -16,6 +16,8 @@
   transition: transform 0.2s ease-in-out;
   overflow: hidden;
   text-align: center;
+  background-color: white;
+  font-size: 0.75rem;
 }
 
 .product p {
@@ -29,7 +31,7 @@
 }
 
 .product img {
-  max-width: 100%;
+  max-width: 85%;
   height: 300px;
 }
 
