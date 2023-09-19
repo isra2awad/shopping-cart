@@ -58,7 +58,14 @@ const Cart = () => {
       {totalPrice > 0 ? (
         <div className={styles.checkOut}>
           <p>subtotal: {totalPrice}$</p>
-          <button className={styles.btn}>Check out</button>
+          <button
+            className={styles.btn}
+            onClick={() => {
+              alert("Order is sumbitted we will get back to you soon");
+            }}
+          >
+            Check out
+          </button>
           <button
             className={styles.btn}
             onClick={() => {
