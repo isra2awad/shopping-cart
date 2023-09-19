@@ -20,7 +20,7 @@
 /* Form input styles */
 .formInput > label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
   color: rgb(45, 58, 23);
 }
 
@@ -48,7 +48,6 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  margin-left: 10px;
 }
 
 .submitButton:hover {
