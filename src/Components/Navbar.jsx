@@ -16,7 +16,7 @@ export const Nav = () => {
         <Link to="/contact">Contact Us</Link>
 
         <Link to="/cart">
-          <ShoppingCart size={32} />
+          <ShoppingCart className={styles.ShoppingCart} size={32} />
           {totalItems > 0 ? (
             <small className={styles.counter}>{totalItems}</small>
           ) : (
