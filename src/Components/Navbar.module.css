@@ -11,7 +11,7 @@
 }
 
 .links {
-  margin-right: 50px;
+  margin-right: 80px;
   display: flex;
   align-items: center;
 }
@@ -34,5 +34,4 @@
 .ShoppingCart {
   position: relative;
   display: inline-block;
-  z-index: 1;
 }
