@@ -1,6 +1,6 @@
 // import { useParams } from "react-router-dom";
 // import DefaultProfile from "../default/DefaultProfile";
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import styles from "./ShopApp.module.css";
 import { ShopContext } from "../../context/ShopContxtProvider";
 

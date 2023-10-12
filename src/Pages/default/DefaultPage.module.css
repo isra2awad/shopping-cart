@@ -13,18 +13,19 @@
 
 .container > h1 {
   color: rgba(19, 44, 2, 0.9);
-  font-size: 3rem; /* Adjust font size for responsiveness */
+  font-size: 8rem;
+  font-family: Tangerine, sans-serif;
 }
 
 .shopButton {
-  width: 200px; /* Adjust button width for responsiveness */
-  height: 60px; /* Adjust button height for responsiveness */
-  font-size: 1.2rem; /* Adjust font size for responsiveness */
+  width: 200px;
+  height: 60px;
+  font-size: 1rem;
   background-color: rgba(19, 44, 2, 0.9);
   color: white;
   border: none;
   border-radius: 8px;
-  margin: 20px 0; /* Add vertical margin for spacing on small screens */
+  margin: 20px 0;
   cursor: pointer;
 }
 
@@ -35,12 +36,27 @@
 /* Media query for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
   .container > h1 {
-    font-size: 2rem; /* Adjust font size for smaller screens */
+    font-size: 3.5rem;
   }
 
   .shopButton {
-    width: 150px; /* Adjust button width for smaller screens */
-    height: 50px; /* Adjust button height for smaller screens */
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
   }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    position: relative;
+  }
+  .container > h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 6rem;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
 }

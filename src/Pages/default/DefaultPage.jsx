@@ -1,4 +1,4 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./DefaultPage.module.css";
 
 const DefaultPage = () => {
